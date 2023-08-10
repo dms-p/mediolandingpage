@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+        <!-- Scripts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <style>
+            body{
+                font-family: 'Manrope', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="">
+        <header class="absolute top-0 py-4 w-full">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-wrap items-center justify-between">
+                <button class="md:hidden inline-flex items-center text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm p-2  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-6 md:h-6 w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                    </svg>                      
+                </button>
+                <div id="logo">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+                <div class="flex md:order-2">
+                    <a href="#" class="inline-flex items-center text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg md:text-base text-sm md:px-5 md:py-2.5 px-3 py-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-6 md:h-6 w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                        </svg>                                  
+                        <span class="md:block hidden ml-2">Sign In</span>
+                    </a>
+                </div>
+                <nav class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                    <ul class="inline-flex gap-3">
+                        <li><a class="hover:bg-blue-100/50 px-6 py-2 rounded-lg text-slate-700" href="#About">About</a></li>
+                        <li><a class="hover:bg-blue-100/50 px-6 py-2 rounded-lg text-slate-700" href="#Feature">Feature</a></li>
+                        <li><a class="hover:bg-blue-100/50 px-6 py-2 rounded-lg text-slate-700" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="bg-gradient-to-b from-[#f2f6fe] to-[#faf0ea] min-h-screen pt-44">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="text-center mb-12">
+                    <div class="text-xs sm:text-sm md:text-base bg-indigo-100 text-indigo-500 px-8 py-2 rounded-full font-semibold inline-flex items-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                        </svg>                          
+                        Dapatkan Gratis Uji Coba Hari ini</div>
+                    <h1 class="max-w-4xl mx-auto md:text-5xl text-4xl md:font-[800] font-bold font-display tracking-tight md:text-7xl text-slate-900 mb-6">Solusi Digital Untuk <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-700">Meningkatkan Efisiensi</span> Fasilitas Kesehatan</h1>
+                    <p class="max-w-2xl mx-auto text-base md:text-xl text-slate-600">Kurangi beban administrasi dan layani pasien lebih cepat dengan digitaliasi proses pelayanan</p>
+                    <div class="mt-8">
+                        <a href="#" class="inline-flex items-center text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg md:text-base text-sm px-5 py-2.5 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800 mr-2">                                  
+                            Coba Gratis
+                        </a>
+                        <a href="#" class="inline-flex items-center text-indigo-700 bg-transparent border border-indigo-700 hover:border-transparent hover:bg-indigo-700 hover:text-white focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg md:text-base text-sm px-5 py-2.5 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800">                                 
+                            Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+                <img src="./images/dashboard_2.svg" alt="">
+            </div>
+        </section>
+        <section class="py-32">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
+                    <div class="px-6">
+                        <h2 class="mb-12 md:text-4xl md:text-left text-center text-3xl font-bold text-slate-800">Apa itu <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-700 font-extrabold">Med.io</span> ?</h2>
+                        <p class="text-base md:text-xl text-slate-600 md:text-left text-center">
+                            software aplikasi SIM Klinik berbasis web yang dapat digunakan oleh Klinik, Praktek Mandiri Dokter atau Bidan, Apotek dan Puskesmas yang bertujuan untuk membantu proses administrasi mulai dari registrasi pasien, penyimpanan data rekam medis elektronik, pemesanan ke unit penunjang stok obat dan alat kesehatan (farmasi), perhitungan jasa medis dan sistem billing (kasir). 
+                        </p>
+                    </div>
+                   <div class="px-6">
+                        <img src="./images/img-aplikasi-klinik.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-32">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="max-w-2xl mx-auto mb-12 text-center">
+                    <h2 class="md:text-4xl text-3xl font-bold md:text-left text-slate-800">Mengapa Memilih Aplikasi di <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-700 font-extrabold">Med.io</span> ?</h2>
+                </div>
+                <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid gap-6">
+                    <div class="px-8 py-12 bg-gray-50/70 hover:shadow-xl hover:bg-white group transition-all rounded-lg border border-gray-100">
+                        <img src="./images/userinterface.svg" class="w-16 h-16" alt="">                             
+                        <h3 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Desain User Friendly</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">Mudah dan Cepat digunakan. Dengan menu sederhana dan mudah dipahami.</p>
+                    </div>
+                    <div class="px-8 py-12 bg-gray-50/70 hover:shadow-xl hover:bg-white group transition-all rounded-lg border border-gray-100">
+                        <img src="./images/report.svg" class="w-16 h-16" alt="">                        
+                        <h3 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Fitur & Laporan Lengkap</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">Fitur & laporan transaksi lengkap, mudah dipahami dan terintegrasi.</p>
+                    </div>
+                    <div class="px-8 py-12 bg-gray-50/70 hover:shadow-xl hover:bg-white group transition-all rounded-lg border border-gray-100">
+                        <img src="./images/shield.svg" class="w-16 h-16" alt="">                          
+                        <h3 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Keamanan Data Tingkat Tinggi</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">Data tersimpan di Cloud, anda tidak perlu memikirkan manajemen data dan server. Kerahasiaan, keamanan dan akses data terjamin</p>
+                    </div>
+                    <div class="px-8 py-12 bg-gray-50/70 hover:shadow-xl hover:bg-white group transition-all rounded-lg border border-gray-100">
+                        <img src="./images/desktop.svg" class="w-16 h-16" alt="">                             
+                        <h3 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Akses Berbasis Web</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">Aplikasi dapat dijalankan di browser Chrome, Mozilla, Opera dll dengan spesifikasi minimal komputer maupun gadget.</p>
+                    </div>
+                    <div class="px-8 py-12 bg-gray-50/70 hover:shadow-xl hover:bg-white group transition-all rounded-lg border border-gray-100">
+                        <img src="./images/gear.svg" class="w-16 h-16" alt="">                          
+                        <h3 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Automasi</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">Mengurangi manual operasional pelaporan.</p>
+                    </div>
+                    <div class="px-8 py-12 bg-gray-50/70 hover:shadow-xl hover:bg-white group transition-all rounded-lg border border-gray-100">
+                        <img src="./images/time.svg" class="w-16 h-16" alt="">                        
+                        <h3 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Efesiensi</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">penyimpanan data-data pasien secara efisien dan terintegrasi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-32">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="flex items-start md:justify-between flex-col md:flex-row mb-12">
+                    <h2 class="max-w-3xl mb-12 md:text-4xl text-3xl font-bold text-slate-800">Fitur Keunggulan <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-700 font-extrabold">Med.io</span></h2>
+                    <div class="md:w-1/3 w-full md:text-right text-center text-slate-600 md:text-lg text-base">
+                        <p>Kami berusaha menyediakan one-stop-solution platform untuk kamu dalam melakukan manajemen usaha klinik</p>
+                    </div>
+                </div>
+                <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid gap-6">
+                    <div class="py-8 px-6 hover:shadow-xl mx-auto bg-white rounded-xl group transition-all border border-gray-100">
+                        <img src="./images/medicalrecord.svg" class="w-16 h-16" alt="">                          
+                        <h4 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Rekam Medis</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">Consult your health condition so that it can behandled immediately by experienced only in Medicare </p>
+                    </div>
+                    <div class="py-8 px-6 hover:shadow-xl mx-auto bg-white rounded-xl group transition-all border border-gray-100">
+                        <img src="./images/datamaster.svg" class="w-16 h-16" alt="">                             
+                        <h4 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Manajemen Data Master</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">Schedule your appointment with your health consultantion with the best doctors in medicare</p>
+                    </div>
+                    <div class="py-8 px-6 hover:shadow-xl mx-auto bg-white rounded-xl group transition-all border border-gray-100">
+                        <img src="./images/pharmacy.svg" class="w-16 h-16" alt="">                        
+                        <h4 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Apotek</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">We always provide complete and trusted healt solutions to meet your health needs</p>
+                    </div>
+                    <div class="py-8 px-6 hover:shadow-xl mx-auto bg-white rounded-xl group transition-all border border-gray-100">
+                        <img src="./images/report.svg" class="w-16 h-16" alt="">                          
+                        <h4 class="md:text-xl text-lg font-semibold text-gray-700 mt-6 mb-3 group-hover:text-orange-500 transition-all">Laporan Otomatis</h3>
+                        <p class="md:text-base text-sm text-gray-500 group-hover:text-gray-700">Consult your health condition so that it can behandled immediately by experienced only in Medicare </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-32">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="flex items-start md:justify-between flex-col md:flex-row mb-12">
+                    <div class="md:w-1/3 w-full">
+                        <h2 class="md:text-4xl text-3xl font-bold md:text-left text-center text-slate-800">Testimonial Kami</h2>
+                    </div>
+                    <div class="md:w-1/3 w-full md:text-right text-center text-slate-600 md:text-lg text-base">
+                        <p>Beberapa Testimonial dari client yang puas dan percaya dengan Platform Kami</p>
+                    </div>
+                </div>
+                <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+                    <div class="col-span-1 w-full px-8 py-12 mx-auto bg-gray-100/50 hover:bg-gray-100 rounded-lg group transition-all">
+                        <div class="profile flex items-center">
+                            <div class="w-12 h-12 overflow-hidden rounded-full bg-gray-200 mr-2">
+                            </div>
+                            <div class="text-left">
+                                <p class="md:text-lg text-base font-semibold text-gray-700">dr. Hanifa Rizqiana</p>
+                                <span class="md:text-base text-sm text-gray-500">Surabaya, Jawa Timur</span>
+                            </div>
+                        </div>
+                        <div class="testimonial mt-6 mb-2">
+                            <p class="md:text-lg text-base text-gray-700 font-medium">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum minima vitae adipisci! Voluptatem cupiditate dolorem vitae eligendi quas veritatis, temporibus obcaecati ducimus excepturi, quos aliquam odit, explicabo odio veniam?"
+                            </p>
+                        </div>
+                        <div class="review inline-flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-gray-300">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>                                     
+                        </div>
+                    </div>
+                    <div class="col-span-1 w-full px-8 py-12 mx-auto bg-gray-100/50 hover:bg-gray-100 rounded-lg group transition-all">
+                        <div class="profile flex items-center">
+                            <div class="w-12 h-12 overflow-hidden rounded-full bg-gray-200 mr-2">
+                            </div>
+                            <div class="text-left">
+                                <p class="md:text-lg text-base font-semibold text-gray-700">dr. Hanifa Rizqiana</p>
+                                <span class="md:text-base text-sm text-gray-500">Surabaya, Jawa Timur</span>
+                            </div>
+                        </div>
+                        <div class="testimonial mt-6 mb-2">
+                            <p class="md:text-lg text-base text-gray-700 font-medium">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum minima vitae adipisci! Voluptatem cupiditate dolorem vitae eligendi quas veritatis, temporibus obcaecati ducimus excepturi, quos aliquam odit, explicabo odio veniam?"
+                            </p>
+                        </div>
+                        <div class="review inline-flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-gray-300">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>                                     
+                        </div>
+                    </div>
+                    <div class="col-span-1 w-full px-8 py-12 mx-auto bg-gray-100/50 hover:bg-gray-100 rounded-lg group transition-all">
+                        <div class="profile flex items-center">
+                            <div class="w-12 h-12 overflow-hidden rounded-full bg-gray-200 mr-2">
+                            </div>
+                            <div class="text-left">
+                                <p class="md:text-lg text-base font-semibold text-gray-700">dr. Hanifa Rizqiana</p>
+                                <span class="md:text-base text-sm text-gray-500">Surabaya, Jawa Timur</span>
+                            </div>
+                        </div>
+                        <div class="testimonial mt-6 mb-2">
+                            <p class="md:text-lg text-base text-gray-700 font-medium">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum minima vitae adipisci! Voluptatem cupiditate dolorem vitae eligendi quas veritatis, temporibus obcaecati ducimus excepturi, quos aliquam odit, explicabo odio veniam?"
+                            </p>
+                        </div>
+                        <div class="review inline-flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-yellow-500">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>       
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-gray-300">
+                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                            </svg>                                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-12">
+            <div class="max-w-5xl mx-auto p-12 bg-indigo-50 rounded-0 md:rounded-xl bg-[url('./images/abstract-illustration.svg')]">
+                <div class="text-center">
+                    <h2 class="max-w-3xl mx-auto font-bold text-5xl leading-tight mb-3"><span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-700">Mulailah hari ini</span></h2>
+                    <p class="max-w-xl mx-auto text-slate-800 mb-6 md:text-base text-sm">Beli perangkat lunak kami agar Anda merasa melakukan sesuatu yang produktif. Jika masih ada yang mau ditanyakan silakan</p>
+                    <a href="#" class="inline-flex items-center text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg md:text-base text-sm md:px-5 md:py-2.5 px-3 py-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800">
+                        <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                class="w-6 h-6 mr-2" viewBox="0 0 30.667 30.667"
+                                xml:space="preserve">
+                            <g>
+                                <path d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017
+                                    c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382
+                                    c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076
+                                    c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427
+                                    c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437
+                                    c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536
+                                    c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609
+                                    c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611
+                                    c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787
+                                    c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739
+                                    C23.307,19.268,23.307,18.533,23.214,18.38z"/>
+                            </g>
+                        </svg>Hubungi Admin Via Whatsapp
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="pb-12">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="">
+                    <img src="./images/logo.svg" class="mx-auto" alt="">
+                </div>
+                <div class="flex items-center justify-between mt-10 flex-col sm:flex-row text-slate-700 font-medium">
+                    <p class="">&copy 2023. Copy Right All reserved</p>
+                    <ul class="flex items-center">
+                        <li class="mr-2"><a href="#">Instagram</a></li>
+                        <li class="mr-2"><a href="#">Facebook</a></li>
+                        <li class="mr-2"><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
